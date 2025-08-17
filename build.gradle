@@ -24,6 +24,8 @@ dependencies {
     implementation "net.zetetic:android-database-sqlcipher:4.5.4"
     implementation 'com.razorpay:checkout:1.6.33'// replace with actual stable version you need
     androidTestImplementation "androidx.test.ext:junit:1.1.5"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-compose:2.8.0"
+
 
 
 
