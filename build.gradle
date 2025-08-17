@@ -25,6 +25,8 @@ dependencies {
     implementation 'com.razorpay:checkout:1.6.33'// replace with actual stable version you need
     androidTestImplementation "androidx.test.ext:junit:1.1.5"
     implementation "androidx.lifecycle:lifecycle-viewmodel-compose:2.8.0"
+    implementation "androidx.navigation:navigation-compose:2.8.0"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-compose:2.8.0"
 
 
 
