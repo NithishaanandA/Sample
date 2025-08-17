@@ -1,0 +1,48 @@
+dependencies {
+   // 🟩 Additional unique libraries
+    implementation 'androidx.compose.material:material-icons-extended:1.4.0'
+    implementation 'io.coil-kt:coil-compose:2.4.0'
+    implementation 'com.airbnb.android:lottie-compose:6.0.0'
+    implementation 'androidx.sqlite:sqlite-ktx:2.2.0'
+    implementation 'com.squareup.okhttp3:okhttp:4.11.0'
+    implementation 'com.itextpdf:itext7-core:9.2.0'
+    implementation 'org.apache.poi:poi-ooxml:5.2.3'
+    implementation 'org.apache.commons:commons-lang3:3.13.0'
+    implementation 'com.google.code.gson:gson:2.10.1'
+    implementation 'io.reactivex.rxjava3:rxjava:3.1.7'
+    implementation 'io.reactivex.rxjava3:rxandroid:3.0.2'
+
+    // ✅ Testing-only libraries
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    androidTestImplementation platform('androidx.compose:compose-bom:2025.06.00')
+    androidTestImplementation 'androidx.compose.ui:ui-test-junit4:1.8.0'
+    debugImplementation 'androidx.compose.ui:ui-tooling:1.8.0'
+    debugImplementation 'androidx.compose.ui:ui-test-manifest:1.8.0'
+
+    implementation "com.google.accompanist:accompanist-flowlayout:0.30.1"
+    implementation "net.zetetic:android-database-sqlcipher:4.5.4"
+    implementation 'com.razorpay:checkout:1.6.33'// replace with actual stable version you need
+    androidTestImplementation "androidx.test.ext:junit:1.1.5"
+
+
+
+implementation(name: 'NeuralEngine', ext: 'aar')
+
+
+}
+
+
+android {
+    // existing config...
+
+    packagingOptions {
+        resources {
+            excludes += "META-INF/DEPENDENCIES"
+            excludes += "META-INF/LICENSE"
+            excludes += "META-INF/LICENSE.txt"
+            excludes += "META-INF/NOTICE"
+            excludes += "META-INF/NOTICE.txt"
+        }
+    }
+}
