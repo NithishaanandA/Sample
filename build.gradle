@@ -66,20 +66,22 @@ dependencies {
     debugImplementation 'androidx.compose.ui:ui-tooling:1.8.3'
     debugImplementation 'androidx.compose.ui:ui-test-manifest:1.8.3'
 
-     implementation files('libs/NeuralEngine.aar')
+     implementation(name: "NeuralEngine", ext: "aar")
 }
 
 
 android {
-    // existing config...
+    // keep your existing configs here (compileSdk, defaultConfig, etc.)
 
-    packagingOptions {
+    packaging {
         resources {
-            excludes += "META-INF/DEPENDENCIES"
-            excludes += "META-INF/LICENSE"
-            excludes += "META-INF/LICENSE.txt"
-            excludes += "META-INF/NOTICE"
-            excludes += "META-INF/NOTICE.txt"
+            excludes += [
+                'META-INF/DEPENDENCIES',
+                'META-INF/LICENSE',
+                'META-INF/LICENSE.txt',
+                'META-INF/NOTICE',
+                'META-INF/NOTICE.txt'
+            ]
         }
     }
 }
