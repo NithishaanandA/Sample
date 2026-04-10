@@ -1,40 +1,70 @@
 dependencies {
-   // 🟩 Additional unique libraries
+
+    // 🔹 Core Android
+    implementation 'androidx.core:core-ktx:1.16.0'
+    implementation 'androidx.appcompat:appcompat:1.7.1'
+    implementation 'androidx.activity:activity-compose:1.10.1'
+
+    // 🔹 Lifecycle (aligned versions)
+    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.9.2'
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.9.2'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.9.2'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-compose:2.9.2'
+
+    // 🔹 Jetpack Compose (aligned)
+    implementation 'androidx.compose.ui:ui:1.8.3'
+    implementation 'androidx.compose.ui:ui-tooling:1.8.3'
+    implementation 'androidx.compose.material3:material3:1.3.2'
     implementation 'androidx.compose.material:material-icons-extended:1.4.0'
+
+    // 🔹 Navigation
+    implementation 'androidx.navigation:navigation-compose:2.9.3'
+
+    // 🔹 Layouts
+    implementation 'androidx.constraintlayout:constraintlayout-compose:1.1.1'
+    implementation "com.google.accompanist:accompanist-flowlayout:0.30.1"
+    implementation 'com.google.accompanist:accompanist-systemuicontroller:0.36.0'
+
+    // 🔹 Media
+    implementation 'androidx.media3:media3-ui:1.8.0'
+    implementation 'androidx.media3:media3-exoplayer:1.8.0'
+
+    // 🔹 Image & UI
     implementation 'io.coil-kt:coil-compose:2.4.0'
     implementation 'com.airbnb.android:lottie-compose:6.0.0'
-    implementation 'androidx.sqlite:sqlite-ktx:2.2.0'
+
+    // 🔹 Networking & JSON
     implementation 'com.squareup.okhttp3:okhttp:4.11.0'
+    implementation 'com.google.code.gson:gson:2.10.1'
+
+    // 🔹 Database
+    implementation 'androidx.sqlite:sqlite-ktx:2.2.0'
+    implementation "net.zetetic:android-database-sqlcipher:4.5.4"
+
+    // 🔹 Files / Docs
     implementation 'com.itextpdf:itext7-core:9.2.0'
     implementation 'org.apache.poi:poi-ooxml:5.2.3'
+
+    // 🔹 Utilities
     implementation 'org.apache.commons:commons-lang3:3.13.0'
-    implementation 'com.google.code.gson:gson:2.10.1'
+
+    // 🔹 RxJava
     implementation 'io.reactivex.rxjava3:rxjava:3.1.7'
     implementation 'io.reactivex.rxjava3:rxandroid:3.0.2'
 
-    // ✅ Testing-only libraries
+    // 🔹 Payments
+    implementation 'com.razorpay:checkout:1.6.33'
+
+    // 🔹 Testing
     testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+
+    // 🔹 Compose Testing
     androidTestImplementation platform('androidx.compose:compose-bom:2025.08.00')
-    androidTestImplementation 'androidx.compose.ui:ui-test-junit4:1.8.0'
-    debugImplementation 'androidx.compose.ui:ui-tooling:1.8.0'
-    debugImplementation 'androidx.compose.ui:ui-test-manifest:1.8.0'
-
-    implementation "com.google.accompanist:accompanist-flowlayout:0.30.1"
-    implementation "net.zetetic:android-database-sqlcipher:4.5.4"
-    implementation 'com.razorpay:checkout:1.6.33'// replace with actual stable version you need
-    androidTestImplementation "androidx.test.ext:junit:1.1.5"
-    implementation "androidx.lifecycle:lifecycle-viewmodel-compose:2.8.0"
-    implementation "androidx.navigation:navigation-compose:2.8.0"
-    implementation "androidx.lifecycle:lifecycle-viewmodel-compose:2.8.0"
-    implementation "androidx.constraintlayout:constraintlayout-compose:1.1.1"
-
-
-
-
-implementation(name: 'NeuralEngine', ext: 'aar')
-
-
+    androidTestImplementation 'androidx.compose.ui:ui-test-junit4:1.8.3'
+    debugImplementation 'androidx.compose.ui:ui-tooling:1.8.3'
+    debugImplementation 'androidx.compose.ui:ui-test-manifest:1.8.3'
 }
 
 
