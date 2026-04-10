@@ -66,7 +66,7 @@ dependencies {
     debugImplementation 'androidx.compose.ui:ui-tooling:1.8.3'
     debugImplementation 'androidx.compose.ui:ui-test-manifest:1.8.3'
 
-     implementation(name: "NeuralEngine", ext: "aar")
+     implementation files('libs/NeuralEngine.aar')
 }
 
 
