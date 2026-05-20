@@ -71,7 +71,7 @@ dependencies {
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
        // Haze Blured BG 
-    implementation ('dev.chrisbanes.haze:haze:1.0.0')
+   implementation ('dev.chrisbanes.haze:haze:1.7.2')
        
     implementation(name: "NeuralEngine", ext: "aar")
 }
